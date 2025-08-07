@@ -59,3 +59,17 @@ The code:
 
 1. Now making the template folder in project level directory
 2. In setting also have to add 'templates' in DIR 
+
+
+# Pushing the code to github 
+1. Initializing git : ` git init `
+2. then making .gitignore file to ignore unnecessary files like .env
+3. git add . will add all the untracked files 
+4. then git remote add orgin (repo_url) like:https://github.com/preeyankakc037/mytodo-django
+5. verfiy by : git remote -v
+6. for main branch git push origin main 
+7. git commit -m "Initial Commit: Django-todo-app"
+8. git branch -M main
+9. git push -u origin main
+10. git pull origin main --allow-unrelated-histories
+
