@@ -69,7 +69,69 @@ The code:
 5. verfiy by : git remote -v
 6. for main branch git push origin main 
 7. git commit -m "Initial Commit: Django-todo-app"
-8. git branch -M main
-9. git push -u origin main
-10. git pull origin main --allow-unrelated-histories
+8. git push -u origin main
 
+
+# Now making the add task options workable 
+means it should have to be saved in database 
+
+> We need a database field to store this task    
+>that's why we need to create a model for storing this data 
+
+# Creating a app for todo app 
+
+> python manage.py startapp todo
+
+registering the app in setting.py 
+creating models in models.py 
+now registering this model in admin.py of todo app 
+as we created this model this means we also have to make migrations and migrate them 
+
+
+> python manage.py makemigrations     
+>python manage.py migrate
+
+
+# Day 3 Fetching Tasks 
+
+How to print the task that are not completed and completed in the frontend?
+
+> We have to put the logic and it goes inside home function because we are going to print the task on the homepage.
+
+> The home function is in the views.py of todo_main   
+> After adding code in home function now we have to loop through a div in home.html
+
+
+# Admin list Display 
+In the admin site, if the task are too much how can we know which task is completed or not  
+so we have to seperate the completed and incompleted task              
+
+This is the current State 
+![alt text](static/admin_list_Display.png)
+
+
+For solving this go to admin.py of todo and add logic 
+
+
+Now it becomes 
+![alt text](static/corrected_admin.png)
+
+after adding search in the admin code logic
+![alt text](static/search_admin.png)
+
+
+# How to add data to the database using add+ button 
+now we'll  first go to urls.py of todo_main and and add code logic 
+creating the urls.py in todo app 
+
+# in video 3:22: minutes => Tech with Rathan 
+
+
+
+# Add task with CSRF TOKEN
+
+CSRF : Cross Site Request Forgery  ::::> meant to prevent unintentional data modification 
+to prevent Cross Site Request Forgery attack
+3:29 part finish 
+
+# After this go to views.py of todo 
