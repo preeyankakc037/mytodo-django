@@ -4,7 +4,10 @@ from todo.models import Task
 
 def home(request):
     tasks = Task.objects.filter(is_complete=False).order_by('-updated_at')  # get only incomplete tasks
+    complete_tasks= Task.objects.filter(is_complete=True)
+    # print(complete_tasks)
     context = {
-        'tasks': tasks  # pass the queryset, not the model
+        'tasks': tasks,  # pass the queryset, not the model
+        'complete_task': complete_tasks,
     }
     return render(request, 'home.html', context)

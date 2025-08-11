@@ -134,4 +134,8 @@ CSRF : Cross Site Request Forgery  ::::> meant to prevent unintentional data mod
 to prevent Cross Site Request Forgery attack
 3:29 part finish 
 
-# After this go to views.py of todo 
+# After this go to views.py of todo
+
+
+# Day 4: Completed Task 
+you'll need to write the logic in views.py of todo main 
