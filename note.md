@@ -139,3 +139,25 @@ to prevent Cross Site Request Forgery attack
 
 # Day 4: Completed Task 
 you'll need to write the logic in views.py of todo main 
+
+then go in home.html and write the respective code in the realted section 
+
+# Day 5: Mark the task as done - Making the button functional 
+
+To make a particular task marked as done we need it's unique info 
+![alt text](static/Day5.png)
+for making one more task mark as done we need it's unique info or id 
+for this we'll need primary key of this data 
+
+Look at the Pk of the data or primary key of the data 
+![alt text](static/Day5.1.png)
+
+> Now we'll add the pk code in url.py of todo
+> Then add the logic in views.py
+
+
+# Task Undone
+
+add the function in views.py, link in url and button in home.html and url 
+
+# Edit Task Url Pattern 
