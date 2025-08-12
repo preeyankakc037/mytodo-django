@@ -161,3 +161,7 @@ Look at the Pk of the data or primary key of the data
 add the function in views.py, link in url and button in home.html and url 
 
 # Edit Task Url Pattern 
+
+As first like always we have to make url pattern 
+# Edit Task with get 
+# Edit  Task with Post 

@@ -38,9 +38,13 @@
                         {{ task.task }}
 
                         <span style="position: relative; float: right;">
-                            <a href="{% url 'mark_as_done' task.pk%}" class="btn btn-success"><i class="fa fa-check"></i> Mark as Done</a>
+                            <a href="{% url 'mark_as_done' task.pk%}" class="btn btn-success"><i
+                                    class="fa fa-check"></i> Mark as Done</a>
                             <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
-                            <a class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+                            <a href="{% url 'edit_task' task.id %}" class="btn btn-primary">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+
                         </span>
                     </div>
                 </div>
@@ -49,13 +53,14 @@
             <div class="col-md-5 col-lg-5">
                 <h5>Completed Tasks</h5>
                 <!-- List of all the tasks that have completed -->
-                 {% for task in complete_task%}
+                {% for task in complete_task%}
                 <div class="card m-1">
                     <div class="card-body">
                         {{task.task}}
                         <span style="position: relative; float: right;">
-                            <a href="{% url 'mark_as_undone' task.pk %}" class="btn btn-warning"><i class="fa fa-times"></i> Mark as undone</a>
-                           
+                            <a href="{% url 'mark_as_undone' task.pk %}" class="btn btn-warning"><i
+                                    class="fa fa-times"></i> Mark as undone</a>
+
                         </span>
                     </div>
                 </div>
