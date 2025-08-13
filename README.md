@@ -5,7 +5,7 @@ Add, update, and complete tasks effortlessly ✅
 
 🚀 **Live Demo:** [mytodo-django.onrender.com](https://mytodo-django.onrender.com)
 
-Note: Render apps may take a few seconds to load after being idle — so if it’s slow to start, don’t worry, 
+Note: Render apps may take a few seconds to load after being idle — so if it’s slow to start, don’t worry,                                                                
 it’s normal! ⏳
 
 Thank you for checking it out! 😊
