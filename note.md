@@ -163,5 +163,15 @@ add the function in views.py, link in url and button in home.html and url
 # Edit Task Url Pattern 
 
 As first like always we have to make url pattern 
-# Edit Task with get 
-# Edit  Task with Post 
+> Edit Task with get 
+> Edit  Task with Post 
+
+
+# Day 6: Delete Task: Final One 
+
+the first thing is to create a URL 
+> Delete Task  
+> Then create the views 
+
+
+# Git Push 
